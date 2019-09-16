@@ -1,7 +1,9 @@
 import React from 'react';
 import { storiesOf, addDecorator, addParameters } from '@storybook/react'
 import { withKnobs, text, number, color, select,  } from '@storybook/addon-knobs'
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { withInfo } from '@storybook/addon-info'
+import { action } from '@storybook/addon-actions';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { Button, ButtonOutline, Text } from '../../src/atoms'
 import { colors } from '../../src/variables';
 import ButtonMD from './Button.md'
@@ -44,10 +46,14 @@ const bColorOpt = {
   ...colors
 }
 
+// const eventsFromNames = actions('onClick', 'onMouseOver');
+
 storiesOf('Atoms/Button', module)
   .addDecorator(withKnobs)
+  .addDecorator(withInfo)
   .add('Button', () => (
-    <Button 
+    <Button
+      onClick={action('button-click')}
       color={color('color', colors.white)} 
       backgroundColor={select('background color',  bColorOpt)}
       h={`${number('height', 32, heightOpt)}px`}
@@ -59,12 +65,6 @@ storiesOf('Atoms/Button', module)
   ),
   {
     notes: 'A very simple example of addon notes',
-  }
-  )
-  .add('Button Outline', () => (
-    <ButtonOutline >Hello Button</ButtonOutline>
-  ),
-  {
-    notes: { markdown: ButtonMD },
-  }
+  },
+  { info: { inline: true, header: false } }
   )
