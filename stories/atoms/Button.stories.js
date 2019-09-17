@@ -53,7 +53,7 @@ storiesOf('Atoms/Button', module)
   .addDecorator(withInfo)
   .add('Button', () => (
     <Button
-      onClick={action('button-click')}
+      onClick={action('clicked')}
       color={color('color', colors.white)} 
       backgroundColor={select('background color',  bColorOpt)}
       h={`${number('height', 32, heightOpt)}px`}

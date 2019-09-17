@@ -1,5 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
+import GlobalStyle from '../../global'
 import { colors } from '../../variables'
 
 const ButtonPlain = Styled.button`
@@ -23,16 +24,19 @@ const ButtonWrapper = Styled(ButtonPlain)`
 `
 
 export const Button = ({ children, p, m, h, w, fontSize, color, backgroundColor }) => (
-  <ButtonWrapper
-    p={p}
-    m={m}
-    h={h}
-    w={w}
-    color={color}
-    fontSize={fontSize}
-    backgroundColor={backgroundColor}>
-    {children}
-  </ButtonWrapper>
+  <React.Fragment>
+    <GlobalStyle />
+    <ButtonWrapper
+      p={p}
+      m={m}
+      h={h}
+      w={w}
+      color={color}
+      fontSize={fontSize}
+      backgroundColor={backgroundColor}>
+      {children}
+    </ButtonWrapper>
+  </React.Fragment>
 )
 
 const OulineButton = Styled(ButtonWrapper)`
