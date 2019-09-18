@@ -26,8 +26,9 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    margin: 0;
-    font-family: sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
   }
 `
 

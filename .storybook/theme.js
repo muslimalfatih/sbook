@@ -4,7 +4,7 @@ export default create({
   base: 'light',
 
   // Typography
-  fontBase: '"Open Sans", sans-serif',
+  fontBase: '"Lato", sans-serif',
   fontCode: 'monospace',
 
   brandTitle: 'SBook'

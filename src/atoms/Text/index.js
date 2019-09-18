@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Styled from 'styled-components'
 import { colors } from '../../variables'
 
 const TextWrapper = Styled.p`
-  font-family: ${({ fontFamily }) => fontFamily || 'inherit'};
+  font-family: ${({ fontFamily }) => fontFamily || 'Arial'};
   padding: ${({ p }) => p || undefined};
   margin: ${({ m }) => m || 0};
   font-size: ${({ fontSize }) => fontSize || '12px'};
@@ -27,3 +28,18 @@ export const Text = ({ p, m, fontSize, fontWeight, weightType, children, color, 
     {children}
   </TextWrapper>
 )
+
+Text.propTypes = {
+  /** Font Weight */
+  fontWeight: PropTypes.number,
+  /** Font SIze Desc */
+  fontSize: PropTypes.string,
+  /** Font Family */
+  fontFamily: PropTypes.string
+}
+
+Text.defaultProps = {
+  fontWeight: 100,
+  fontSize: '12px',
+  fontFamily: 'Arial'
+}
