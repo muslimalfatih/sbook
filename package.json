@@ -11,7 +11,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "NODE_ENV=development jest --verbose",
+    "test:coverage": "NODE_ENV=development jest --verbose --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -43,8 +44,16 @@
     "@storybook/addons": "^5.2.0",
     "@storybook/react": "^5.2.0",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-preset-react": "^6.24.1",
+    "jest": "^24.9.0",
     "prop-types": "^15.7.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
