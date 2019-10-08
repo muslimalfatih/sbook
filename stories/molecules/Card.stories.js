@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Card } from '../../src/molecules'
+import { Card } from 'sbook'
 
 storiesOf('Molecules/Card', module)
   .add('Card', () => (

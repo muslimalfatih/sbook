@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Styled from 'styled-components'
-import { Card } from '../../molecules'
+import { Card } from 'sbook'
 
 const TimelineWrapper = Styled.div`
   width: 400px;
 `
 
-const Timeline = ({ data }) => {
+export const Timeline = ({ data }) => {
   return (
     <TimelineWrapper>
       <Card images={data.images} post={data.post} m='16px 0 0 0' />
@@ -19,5 +19,3 @@ const Timeline = ({ data }) => {
     </TimelineWrapper>
   )
 }
-
-export default Timeline

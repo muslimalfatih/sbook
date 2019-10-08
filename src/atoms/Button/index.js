@@ -1,7 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components'
-import GlobalStyle from '../../global'
-import { colors } from '../../variables'
+import GlobalStyle from 'sbook/global'
+import { colors } from 'sbook/variables'
 
 const ButtonPlain = Styled.button`
   padding: 0;

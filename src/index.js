@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// Atom
+export { Button, ButtonOutline } from './atoms/Button'
+export { Icon } from './atoms/Icon'
+export { Text } from './atoms/Text'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Molecules
+export { Card } from './molecules/Card'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Organisms
+export { Timeline } from './organisms/Timeline'

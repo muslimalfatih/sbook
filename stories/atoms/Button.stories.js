@@ -4,8 +4,8 @@ import { withKnobs, text, number, color, select,  } from '@storybook/addon-knobs
 import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { Button, ButtonOutline, Text } from '../../src/atoms'
-import { colors } from '../../src/variables';
+import { Button, ButtonOutline, Text } from 'sbook'
+import { colors } from 'sbook/variables';
 import ButtonMD from './Button.md'
 
 

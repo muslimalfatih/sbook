@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react'
-import Timeline from '../../src/organisms/Timeline'
+import { Timeline } from 'sbook'
 
 const data = {
     images: "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic1.businessinsider.com%2Fimage%2F528d41f76bb3f7d71051e27f%2Fwhen-hiring-always-ask-yourself-where-can-this-person-go-from-here.jpg&f=1&nofb=1",
