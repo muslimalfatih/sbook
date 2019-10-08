@@ -1,6 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
-import { Card } from 'sbook'
+import { Card } from '../../../src'
 
 const TimelineWrapper = Styled.div`
   width: 400px;

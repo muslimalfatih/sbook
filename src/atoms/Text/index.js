@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import Styled from 'styled-components'
-import { colors } from 'sbook/variables'
+import { colors } from '../../../src/variables'
 
 const TextWrapper = Styled.p`
   font-family: ${({ fontFamily }) => fontFamily || 'Arial'};

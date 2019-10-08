@@ -1,7 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components'
-import { Text, Icon } from 'sbook'
-import { shadows, colors } from 'sbook/variables'
+import { Text, Icon } from '../../../src'
+import { shadows, colors } from '../../../src/variables'
 
 const CardWrapper = Styled.div`
   padding: ${({ p }) => p || 0};

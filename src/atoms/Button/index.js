@@ -1,7 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components'
-import GlobalStyle from 'sbook/global'
-import { colors } from 'sbook/variables'
+import GlobalStyle from '../../global'
+import { colors } from '../../variables'
 
 const ButtonPlain = Styled.button`
   padding: 0;
@@ -19,7 +19,7 @@ const ButtonWrapper = Styled(ButtonPlain)`
   height: ${({ h }) => h || '32px'};
   width: ${({ w }) => w || '120px'};
   color: ${({ color }) => color || colors.white};
-  background-color: ${({ backgroundColor }) => backgroundColor || colors.blue};
+  background-color: ${({ backgroundColor }) => backgroundColor || colors.black};
   font-size: ${({ fontSize }) => fontSize || '14px'};
 `
 

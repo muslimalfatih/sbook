@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info'
-import { Text } from 'sbook'
-import { colors } from 'sbook/variables';
+import { Text } from '../../src'
+import { colors } from '../../src/variables';
 
 storiesOf('Atoms/Typography', module)
   .addDecorator(withInfo)

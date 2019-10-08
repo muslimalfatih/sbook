@@ -1,8 +1,8 @@
 import React from 'react'
 import Styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
-import { Icon } from 'sbook'
-import { colors } from 'sbook/variables'
+import { Icon } from '../../src'
+import { colors } from '../../src/variables'
 
 storiesOf('Atoms/Icon', module)
   .add('List Icon', () => (
