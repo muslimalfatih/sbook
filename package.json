@@ -33,7 +33,8 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react-test-renderer": "^16.10.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,7 +44,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-sb": "rm -rf lib && babel src --out-dir lib --source-maps inline --copy-files",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -c .storybook -o build",
     "build-storybook-docs": "build-storybook -s public --docs"
   },
   "eslintConfig": {
