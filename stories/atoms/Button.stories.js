@@ -4,7 +4,7 @@ import { withKnobs, text, number, color, select,  } from '@storybook/addon-knobs
 import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { Button, ButtonOutline, Text } from '../../src'
+import { Button, ButtonBorder, ButtonOutline, Text } from '../../src'
 import { colors } from '../../src/variables';
 import ButtonMD from './Button.md'
 
@@ -63,8 +63,13 @@ storiesOf('Atoms/Button', module)
       >
         {text('Label', 'Hello Storybook')}
     </Button>
+    )
   )
-  )
+  .add('Button with Border', () => (
+    <ButtonBorder>
+      Button WIth Border
+    </ButtonBorder>
+  ))
 
 export default {
   title: 'Design System | Button',

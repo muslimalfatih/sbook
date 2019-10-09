@@ -1,1 +1,1 @@
-export { Button, ButtonOutline } from './Button';
+export { Button, ButtonOutline, ButtonBorder } from './Button';
