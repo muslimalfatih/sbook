@@ -29,6 +29,14 @@ const ButtonWrapper = Styled(ButtonPlain)`
   font-size: ${({ fontSize }) => fontSize || '14px'};
 `
 
+export const ButtonBorder = Styled(ButtonWrapper)`
+  border-radius: 5px;
+  border: 1px solid yellow;
+  background-color: white;
+  color: black;
+  width: 250px;
+`
+
 export const Button = ({ children, p, m, h, w, fontSize, color, backgroundColor }) => (
   <React.Fragment>
     <ButtonWrapper
