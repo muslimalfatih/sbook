@@ -1,7 +1,7 @@
 {
   "name": "sbook",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "repository": "https://github.com/muslimalfatih/sbook.git",
   "dependencies": {
     "cross-env": "^6.0.3",
     "react": "^16.9.0",
@@ -47,6 +47,7 @@
     "build-storybook": "build-storybook -c .storybook -o build",
     "build-storybook-docs": "build-storybook -s public --docs"
   },
+  "prepublishOnly": "npm run build-sb",
   "eslintConfig": {
     "extends": "react-app"
   },
