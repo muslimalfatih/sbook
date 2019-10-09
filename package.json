@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cross-env": "^6.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
@@ -15,15 +16,19 @@
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
+    "@storybook/addon-a11y": "^5.2.3",
     "@storybook/addon-actions": "^5.2.0",
     "@storybook/addon-backgrounds": "^5.2.0",
     "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-docs": "^5.2.3",
     "@storybook/addon-info": "^5.2.0",
     "@storybook/addon-knobs": "^5.2.3",
     "@storybook/addon-links": "^5.2.0",
     "@storybook/addon-notes": "^5.2.0",
+    "@storybook/addon-storysource": "^5.2.3",
     "@storybook/addon-viewport": "^5.2.0",
     "@storybook/addons": "^5.2.0",
+    "@storybook/design-system": "^1.1.6",
     "@storybook/react": "^5.2.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
@@ -33,12 +38,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "NODE_ENV=development jest --verbose",
-    "test:coverage": "NODE_ENV=development jest --verbose --coverage",
+    "test": "cross-env NODE_ENV=development jest --verbose",
+    "test:coverage": "cross-env NODE_ENV=development jest --verbose --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-sb": "rm -rf lib && babel src --out-dir lib --source-maps inline --copy-files",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-storybook-docs": "build-storybook -s public --docs"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -51,7 +51,7 @@ const bColorOpt = {
 
 storiesOf('Atoms/Button', module)
   .addDecorator(withKnobs)
-  .addDecorator(withInfo)
+  // .addDecorator(withInfo)
   .add('Button', () => (
     <Button
       onClick={action('clicked')}
@@ -62,10 +62,18 @@ storiesOf('Atoms/Button', module)
       fontSize={`${number('font-size', 14)}px`}
       >
         {text('Label', 'Hello Storybook')}
-      </Button>
-  ),
-  {
-    notes: 'A very simple example of addon notes',
-  },
-  { info: { inline: true, header: false } }
+    </Button>
   )
+  )
+
+export default {
+  title: 'Design System | Button',
+  parameters: {
+    component: Button,
+    componentSubtitle: 'A Button'
+  }
+}
+
+Button.story = {
+  parameters: { docs: { storyDescription: '4 sizes are supported.' } }
+}

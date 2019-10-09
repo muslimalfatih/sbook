@@ -1,6 +1,12 @@
+/**
+- Use an avatar for attributing actions or content to specific users.
+- The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.
+**/
+
 import React from 'react'
+import PropTypes from 'prop-types';
 import Styled from 'styled-components'
-import GlobalStyle from '../../global'
+// import GlobalStyle from '../../global'
 import { colors } from '../../variables'
 
 const ButtonPlain = Styled.button`
@@ -25,7 +31,6 @@ const ButtonWrapper = Styled(ButtonPlain)`
 
 export const Button = ({ children, p, m, h, w, fontSize, color, backgroundColor }) => (
   <React.Fragment>
-    <GlobalStyle />
     <ButtonWrapper
       p={p}
       m={m}
@@ -59,3 +64,23 @@ export const ButtonOutline = ({ children, p, m, h, w, fontSize, color, backgroun
     {children}
   </OulineButton>
 )
+
+// Text.propTypes = {
+//   /** Font Weight */
+//   fontWeight: PropTypes.number,
+//   /** Font SIze Desc */
+//   fontSize: PropTypes.string,
+//   /** Font Family */
+//   fontFamily: PropTypes.string
+// }
+
+// Text.defaultProps = {
+//   fontWeight: 100,
+//   fontSize: '12px',
+//   fontFamily: 'Arial'
+// }
+
+Button.propTypes = {
+  /**  padding */
+  fontSize: PropTypes.number
+}
