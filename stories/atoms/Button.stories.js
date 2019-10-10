@@ -51,7 +51,7 @@ const bColorOpt = {
 
 storiesOf('Atoms/Button', module)
   .addDecorator(withKnobs)
-  // .addDecorator(withInfo)
+  .addDecorator(withInfo)
   .add('Button', () => (
     <Button
       onClick={action('clicked')}

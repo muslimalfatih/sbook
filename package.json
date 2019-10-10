@@ -1,6 +1,6 @@
 {
   "name": "sbook",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "repository": "https://github.com/muslimalfatih/sbook.git",
   "dependencies": {
     "cross-env": "^6.0.3",
@@ -51,6 +51,9 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "files": [
+    "lib"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
