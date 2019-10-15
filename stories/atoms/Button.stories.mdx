@@ -12,10 +12,10 @@ import { colors } from '../../src/variables';
 
 # Button
 ```
-import { Button } from sbook'
+import { Button } from 'sbook/lib/atoms'
 ```
 <Preview>
-  <Story name="button" parameters={{ decorators: [withKnobs] }}>
+  <Story name="button" decorators={[withKnobs]}>
     <Button
       onClick={action('clicked')}
       color={color('color', colors.white)} 
@@ -39,7 +39,7 @@ import { Button } from sbook'
 
 # Button With Border
 ```
-import { ButtonBorder } from 'sbook'
+import { ButtonBorder } from 'sbook/lib/atoms'
 ```
 <Preview>
   <Story name="button with border">

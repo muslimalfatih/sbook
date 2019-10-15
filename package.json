@@ -1,18 +1,13 @@
 {
   "name": "sbook",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": "https://github.com/muslimalfatih/sbook.git",
   "dependencies": {
-    "@types/jest": "^24.0.19",
-    "@types/node": "^12.7.12",
-    "@types/react": "^16.9.6",
-    "@types/react-dom": "^16.9.2",
     "cross-env": "^6.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "styled-components": "^4.3.2",
-    "typescript": "^3.6.4"
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
@@ -35,12 +30,20 @@
     "@storybook/addons": "^5.2.0",
     "@storybook/design-system": "^1.1.6",
     "@storybook/react": "^5.2.0",
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.7.12",
+    "@types/react": "^16.9.7",
+    "@types/react-dom": "^16.9.2",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
-    "react-test-renderer": "^16.10.2"
+    "react-docgen-typescript-loader": "^3.3.0",
+    "react-test-renderer": "^16.10.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
   },
   "scripts": {
     "start": "react-scripts start",
