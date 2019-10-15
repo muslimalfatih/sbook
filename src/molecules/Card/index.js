@@ -8,7 +8,7 @@ const CardWrapper = Styled.div`
   margin: ${({ m }) => m || 0};
   display: flex;
   padding: 8px;
-  border-radius: 4px 24px 24px 24px;
+  border-radius: 5px;
   box-shadow: ${shadows.idle};
   min-height: 100px;
 `

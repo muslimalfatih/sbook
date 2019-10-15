@@ -16,13 +16,33 @@ import { Button } from sbook'
 ```
 <Preview>
   <Story name="button" parameters={{ decorators: [withKnobs] }}>
-    <Button>A Button</Button>
+    <Button
+      onClick={action('clicked')}
+      color={color('color', colors.white)} 
+      backgroundColor={select('background color',  colors)}
+      h={`${number('height', 32, {
+        range: true,
+        min: 24,
+        max: 90,
+        step: 1,
+        })}px`}
+      w={`${number('width', 240)}px`}
+      fontSize={`${number('font-size', 14)}px`}
+      >
+        {text('Label', 'Hello Storybook')}
+    </Button>
   </Story>
 </Preview>
 
+### Button Props
 <Props of={Button}/>
 
 # Button With Border
-<Story name="button with border">
-  <ButtonBorder/>
-</Story>
+```
+import { ButtonBorder } from 'sbook'
+```
+<Preview>
+  <Story name="button with border">
+    <ButtonBorder>Button with Border</ButtonBorder>
+  </Story>
+</Preview>
