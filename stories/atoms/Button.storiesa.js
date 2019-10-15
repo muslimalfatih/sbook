@@ -1,12 +1,12 @@
 import React from 'react';
-import { storiesOf, addDecorator, addParameters } from '@storybook/react'
+import { storiesOf, addParameters } from '@storybook/react'
 import { withKnobs, text, number, color, select,  } from '@storybook/addon-knobs'
 import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { Button, ButtonBorder, ButtonOutline, Text } from '../../src'
+import { Button, ButtonBorder } from '../../src'
 import { colors } from '../../src/variables';
-import ButtonMD from './Button.md'
+// import ButtonMD from './Button.stories.mdx'
 
 
 const newViewports = {
@@ -71,14 +71,14 @@ storiesOf('Atoms/Button', module)
     </ButtonBorder>
   ))
 
-export default {
-  title: 'Design System | Button',
-  parameters: {
-    component: Button,
-    componentSubtitle: 'A Button'
-  }
-}
+// export default {
+//   title: 'Design System | Button',
+//   parameters: {
+//     component: Button,
+//     componentSubtitle: 'A Button'
+//   }
+// }
 
-Button.story = {
-  parameters: { docs: { storyDescription: '4 sizes are supported.' } }
-}
+// Button.story = {
+//   parameters: { docs: { storyDescription: '4 sizes are supported.' } }
+// }

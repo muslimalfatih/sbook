@@ -1,6 +1,5 @@
 // Atom
-import * as Button from './atoms/Button'
-
+// import * as Button from './atoms/Button'
 // export { Button, ButtonOutline } from './atoms/Button'
 
 export * from './atoms/Button'

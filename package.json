@@ -3,11 +3,16 @@
   "version": "0.1.4",
   "repository": "https://github.com/muslimalfatih/sbook.git",
   "dependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.7.12",
+    "@types/react": "^16.9.6",
+    "@types/react-dom": "^16.9.2",
     "cross-env": "^6.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "typescript": "^3.6.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
@@ -33,6 +38,7 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
+    "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.10.2"
   },
